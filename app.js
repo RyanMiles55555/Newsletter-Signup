@@ -77,9 +77,15 @@ app.post("/failure", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(3005, () => {
-  console.log("Server is up");
-});
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
+
+// app.listen(3005, () => {
+//   console.log("Server is up");
+// });
 
 // async function run() {
 //   const response = await mailchimpTx.users.ping();
