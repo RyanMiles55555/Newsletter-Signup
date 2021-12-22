@@ -81,7 +81,7 @@ app.post("/failure", (req, res) => {
 // if (port == null || port == "") {
 //   port = 8000;
 // }
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
 
 // app.listen(3005, () => {
 //   console.log("Server is up");
