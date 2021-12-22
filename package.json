@@ -1,6 +1,9 @@
 {
   "name": "newsletter-signup",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.13.1"
+  },
   "description": "",
   "server": "app.js",
   "scripts": {
@@ -12,7 +15,6 @@
   "dependencies": {
     "@mailchimp/mailchimp_transactional": "^1.0.46",
     "express": "*",
-    "body-parser": "*",
-    "bcrypt": "^0.8.5"
+    "body-parser": "*"
   }
 }
