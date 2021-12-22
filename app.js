@@ -77,11 +77,11 @@ app.post("/failure", (req, res) => {
   res.redirect("/");
 });
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-app.listen(port);
+// let port = process.env.PORT;
+// if (port == null || port == "") {
+//   port = 8000;
+// }
+app.listen(8000);
 
 // app.listen(3005, () => {
 //   console.log("Server is up");
