@@ -15,6 +15,7 @@
   "dependencies": {
     "@mailchimp/mailchimp_transactional": "^1.0.46",
     "express": "*",
-    "body-parser": "*"
+    "body-parser": "*",
+    "request": "*"
   }
 }
